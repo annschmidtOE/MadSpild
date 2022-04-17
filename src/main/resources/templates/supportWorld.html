@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Around the world</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Gør den god på alle enheder -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        body {
+
+        }
+
+
+        /*  HEADER NAVIGATION BAR */
+        .navbar a {
+            align-content: center;
+            float: left;
+            color: white;
+            font-family: "Noto Sans CJK KR";
+            background-color: rebeccapurple;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 26px;
+            lengt: 90%;
+        }
+
+        /* HEADER NAVIGATION BAR SETTINGS */
+        .navbar a:hover {
+            background-color: gold;
+        }
+        .navbar a:active {
+            background-color: gold;
+        }
+        .active {
+            background-color: limegreen;
+        }
+
+
+        /* drop down*/
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 25px;
+            border: none;
+            outline: none;
+            color: lightyellow;
+            padding: 26px;
+            background-color: rebeccapurple;
+            font-family: "Noto Sans CJK KR";
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: gold;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rebeccapurple;
+            alignment: right;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: lightyellow;
+            padding: 16px 40px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: gold;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: rebeccapurple;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+            color: lightyellow;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: gold;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: gold;
+        }
+
+
+        body {
+            background-image: url("pear.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h1{
+            color: hotpink;
+            text-align: center;
+            alignment: center;
+            font-family: "Noto Sans CJK KR";
+            font-size: 60px;
+            object-position: center top;
+            object-fit: none;
+            margin-bottom: 6px;
+            text-shadow: 2px 2px rebeccapurple;
+
+        }
+
+
+    </style>
+
+    <div class="navbar">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+
+        <a href="workworld.html" class="active">  <i class='fas fa-hand-holding-heart'></i>Volunteer around the world</a>
+
+        <a href="petitions.html" class="active"><i class='fas fa-vote-yea'></i>Petitions to sign</a>
+
+        <a href="donate.html" class="active"><i class='fas fa-hand-holding-usd'></i>
+            </i>Donate</a>
+        <div class="dropdown">
+            <div class="dropdown">
+                <button class="dropbtn"></i><i class="fa fa-fw fa-pen"></i>Guides to reduce food waste<i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="resturant.html"><i class='fas fa-concierge-bell'></i>Restaurants</a>
+
+                    <a href="company.html"><i class='fas fa-briefcase'></i>Companies and Commercial Kitchens</a>
+
+                    <a href="retail.html"><i class='fas fa-bread-slice'></i>Retail
+                    </a>
+
+                    <a href="Households.html"><i class='fas fa-laptop-house'></i>Private households</a>
+                    </a>
+                </div>
+            </div></div>
+        <br> <br> <br> <br>
+</head>
+<body>
+
+<p><<body>
+</p>
+
+
+
+
+
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+</body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Volunteer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Gør den god på alle enheder -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        body {
+
+        }
+
+
+        /*  HEADER NAVIGATION BAR */
+        .navbar a {
+            align-content: center;
+            float: left;
+            color: white;
+            font-family: "Noto Sans CJK KR";
+            background-color: rebeccapurple;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 26px;
+            lengt: 90%;
+        }
+
+        /* HEADER NAVIGATION BAR SETTINGS */
+        .navbar a:hover {
+            background-color: gold;
+        }
+        .navbar a:active {
+            background-color: gold;
+        }
+        .active {
+            background-color: gold;
+        }
+
+
+        /* drop down*/
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 25px;
+            border: none;
+            outline: none;
+            color: lightyellow;
+            padding: 26px;
+            background-color: rebeccapurple;
+            font-family: "Noto Sans CJK KR";
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: gold;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rebeccapurple;
+            alignment: right;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: lightyellow;
+            padding: 16px 40px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: gold;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: rebeccapurple;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+            color: lightyellow;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: gold;
+        }
+
+        /* Create an active/current tablink class */
+       .tab button.active {
+            background-color: gold;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            color: lightyellow;
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+            background-color:rgba(10,10,10,0.7);
+        }
+
+        /* Style the close button */
+        .topright {
+            float: right;
+            cursor: pointer;
+            font-size: 28px;
+            color: lightyellow;
+        }
+
+        body {
+            height: 408px;
+            font-family: "Noto Sans CJK KR";
+            width: max-content;
+            border-image: none;
+        }
+
+        body {
+        background-image: url("blublu.jpg");
+            width: max-content;
+            height: 168px;
+        }
+
+        body {
+            background-image: url("blublu.jpg");
+            background-size: cover;
+        }
+        h1{
+            text-shadow: 3px 3px hotpink;
+            color: #f0f30e;
+            font-size: 50px;
+            font-family: "Noto Sans CJK KR";
+        }
+
+        #description{
+            font-size: 25px;
+            text-shadow: 3px 3px hotpink;
+            font-family: "Noto Sans CJK KR";
+            color: #f0f30e;
+            font-weight: 600;
+        }
+
+
+
+    </style>
+
+    <div class="navbar">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+
+        <a href="workworld.html" class="active">  <i class='fas fa-hand-holding-heart'></i>Volunteer around the world</a>
+
+        <a href="petitions.html" class="active"><i class='fas fa-vote-yea'></i>Petitions to sign</a>
+
+        <a href="donate.html" class="active"><i class='fas fa-hand-holding-usd'></i>
+            </i>Donate</a>
+
+        <div class="dropdown">
+            <button class="dropbtn"></i><i class="fa fa-fw fa-pen"></i>Guides to reduce food waste<i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="resturant.html"><i class='fas fa-concierge-bell'></i>Restaurants</a>
+
+                <a href="company.html"><i class='fas fa-briefcase'></i>Companies and Commercial Kitchens</a>
+
+                <a href="retail.html"><i class='fas fa-bread-slice'></i>Retail
+                </a>
+
+                <a href="Households.html"><i class='fas fa-laptop-house'></i>Private households</a>
+                </a>
+            </div>
+        </div></div>
+    <br> <br> <br> <br>
+</head>
+<body>
+
+
+<h1>Volunteer Around the World!</h1>
+<div id="description">
+<p>Click on the country you wish to volunteer in and you will find the information you need</p>
+</div>
+<div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'UnitedKingdom')" id="defaultOpen">United Kingdom</button>
+    <button class="tablinks" onclick="openCity(event, 'USA')">United States</button>
+    <button class="tablinks" onclick="openCity(event, 'Denmark')">Denmark</button>
+
+</div>
+
+
+<!-- LONDON -->
+<div id="UnitedKingdom" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+
+    <h2>The Felix Project</h2>
+    <p> In spite of millions of people in the UK regularly experience hunger,  tonnes of surplus fresh food is thrown away every day.
+        The Felix Project collects fresh, nutritious food that cannot be sold, they  deliver this surplus food to charities and schools
+        so that  they can provide healthy meals and help the most vulnerable in society.  Volunteers at The Felix Project get good food to good causes, helping to rescue,
+        cook and deliver surplus food for Londoners facing food poverty.
+        As a volunteer at The Felix projeckt you can pick and choose when you'd like to volunteer & how often. Most volunteering with The Felix Project will last 4 hours.
+        You can choose to get involved in a range of tasks - from sorting food, to admin work, cooking in our kitchen, or driving our green Felix vans.
+    </p>
+    <h4>Become a Volunteer</h4>
+    <a href="https://thefelixproject.org/help-us/volunteer-london" style="color: yellow">The Felix Project - Become a Volunteer</a><br>
+    <a href="https://thefelixproject.org/" style="color: yellow">About the Felix Project</a><br>
+
+    <h2>Fare Share</h2>
+    <p>
+        FareShare is the UK’s national network of charitable food redistributors, made up of 18 independent organisations.
+        Together, we take good quality surplus food from right across the food industry and get it to more than 10,500 frontline charities and community groups.
+        The food we redistribute is nutritious and good to eat. It reaches charities across the UK, including school breakfast clubs, older people’s lunch clubs,
+         homeless shelters, and community cafes. Every week we provide enough food to create almost a million meals for vulnerable people.
+    </p>
+    <a href="https://fareshare.org.uk/volunteer/?rc=london-bow#quiz" style="color: yellow">Fare Share - Become a Volunteer</a>
+    <a href="https://fareshare.org.uk/" style="color: yellow">About Fare Share</a><br>
+
+    <h2>City Harvest London</h2>
+    <p>City Harvest was founded in 2014 by a small group of people, who came together to address food waste and food poverty in the capital,
+        forming London's first food redistribution charity. City Harvest missions  is to educe food insecurity and protect the planet by diverting quality, nutritious,
+        edible surplus food from waste and redistributing it to those facing food poverty, so that where all people have access to fresh, nourishing
+        food and no good food is wasted from within the food supply chain.
+    </p>
+    <h4>Become a Volunteer</h4>
+    <div id="yellow">
+    <a href="https://www.cityharvest.org.uk/" style="color: yellow">City Harvest - Become a Volunteer</a><br>
+    <a href="https://www.cityharvest.org.uk/corporate-volunteering" style="color: yellow;">City Harvest - Cooperate Volunteering</a>
+        <a href="https://www.cityharvest.org.uk/about-city-harvest" style="color: yellow">About City Harvest</a></div>
+    <br>
+    <br>
+</div>
+
+<div id="USA" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+    <h2>Food Rescue US</h2>
+    <p> Food Rescue US is fightinh to end local hunger. They are  a technology-based, volunteer-driven,
+        direct-transfer platform that is simple, sustainable, and replicable. Volunteer food rescuers across the country
+        deliver fresh food from businesses that have too much to people who have too little. Food Rescue US is the only organization in
+        food rescue operating with our unique model. Food Rescue US is committed to ending American food insecurity by directly transferring fresh, usable food that would have
+        otherwise been thrown away from restaurants, grocers and other food industry sources to food-insecure families throughout the U.S.
+    </p>
+    <h4>Become a Volunteer</h4>
+    <a href="https://www.communityplates.org/get-involved/" style="color: yellow">Food Rescue US - Become a Volunteer</a><br>
+    <a href="https://www.communityplates.org/about/" style="color: yellow">About Food Rescue US</a><br>
+
+    <h2>DC Central Kitchen</h2>
+    <p>
+        DC Central Kitchen’s mission is to use food as a tool to strengthen bodies, empower minds, and build communities.
+        DC Central Kitchen (DCCK) is an iconic nonprofit and social enterprise that combats hunger and poverty through job
+        training and job creation. The organization provides hands-on culinary job training for individuals facing high barriers
+        to employment while creating living wage jobs and bringing nutritious, dignified food where it is most needed. DCCK’s social
+        ventures include serving scratch-cooked farm-to-school meals in DC schools, delivering fresh, affordable produce to corner stores
+        in neighborhoods without supermarkets, and operating a fast-casual cafe.
+    </p>
+    <h4>Become a Volunteer</h4>
+    <a href="https://dccentralkitchen.org/volunteer/" style="color: yellow">DC Central Kitchen - Become a Volunteer</a><br>
+    <a href="https://dccentralkitchen.org/mission/" style="color: yellow">About DC Central Kitchen</a><br>
+
+    <h2>Food Shift</h2>
+    <p>
+        Food Shift recovers and revitalizes surplus and imperfect food. Working its culinary and human magic in The Food Shift Kitchen,
+        Food Shift creates delicious meals for our catering and food donation programs,
+        simultaneously imparting culinary skills and job-training to our kitchen apprentices.
+        We strive to maximize nutritious food prepared and distributed to food insecure communities,
+        and to support individuals with limited resources to achieve economic security through job training and employment.
+    </p>
+    <h4>Become a Volunteer</h4>
+    <a href="https://foodshift.net/jobs-volunteering/" style="color: yellow">Food Shift- Becomee a Volunteer</a><br>
+    <a href="https://foodshift.net/about-us/" style="color: yellow">About Food Shift</a><br>
+</div>
+<!-- DENMARK -->
+<div id="Denmark" class="tabcontent">
+    <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+
+
+    <h2>FødevareBanken</h2>
+    <p>FødevareBanken er Danmarks største organisation der arbejder for at bekæmpe madspil og madfattigdom i Danmark
+        De modtager bla. overskudsmad fra fødevareproducenter og grossister(overskuds mad er mad som intet fejler
+        men ikke kan sælges i butikker) og levere maden videre til sociale organisationer der levere mad til mennesker i svære situationer.
+        FødevareBanken udretter utrolig mange gode ting, og har mange forskellige muligheder for at blive frivillig i hele Danmark.   </p>
+    <h4>Bliv frivillig</h4>
+        <a href="https://foedevarebanken.dk/vores-frivillige/" style="color: yellow">FødevareBanken - bliv frivillig</a>
+    <a href="https://foedevarebanken.dk/"style="color: yellow">FødevareBanken forside</a><br>
+
+
+    <h2>Stop madspild</h2>
+    <p>Stop Spild Af Mad er en non-profit frivillig forbrugerbevægelse, som siden 2008 har kæmpet mod madspild siden sat stort fokus samt opnået mange resultater både i Danmark og i samarbejde med Regeringen, EU, Norden og FN.
+    </p>
+    <h4>Bliv frivillig</h4>
+    <a href="https://stopspildafmad.org/"style="color: yellow">Stop Spild Af Mad forsinde</a><br>
+    <a href="https://stopspildafmad.org/bliv-aktiv/bliv-frivillig/" style="color: yellow">Stop Spild Af Mad - bliv frivillig</a><br>
+
+
+    <h2>Kirkens nødhjælp - Weefood</h2>
+    <p>Weefood er en butik under Folkekirkens Nødhjælp, som sælger overskudsvarer og giver overskuddet til mennesker i nød.
+        Weefood har forskellige frivillig muligheder i hele landet.
+        <bold>Bliv frivillig</bold>
+    </p>
+    <h4>Bliv frivillig</h4>
+    <a href="https://www.noedhjaelp.dk/wefood/frivillig-i-wefood" style="color: yellow">Weefood - bliv frivillig</a><br>
+    <a href="https://www.noedhjaelp.dk/madspild" style="color: yellow">Folkekirkens nødhjælp om Weefood og madspild</a><br>
+
+
+    <h2>Gratis Mad</h2>
+    <p> GratisMad.dk er en formidlingsplatform med det formål at tydeliggøre muligheder for at modtage eller donere overskudsmad i Danmark.<br>
+        Gratismad.dk har følgende sammarbejdspartnere: <br>
+    <a href="https://adresult.dk/" style="color: yellow">Adresult</a> <br>
+        <a href="https://www.planmiljoe.dk/" style="color: yellow">PlanMiljø</a><br>
+        <a href="https://stopspildafmad.org/" style="color: yellow">Stop Spild Af Mad</a><br>
+        <a href="https://lmfond.dk/" style="color: yellow">Lemvigh-Müller Fonden</a><br></p>
+    <h4>Bliv frivillig</h4>
+    <a href="https://www.gratismad.dk/" style="color: yellow">Gratid Mad + Stop Spild Af Mad - Doner overskudsmad i dit område</a>
+
+
+
+    <h2>Frivillig Job DK</h2>
+    <p> Frivillig Job DK er en kæmpe portal der hjælper folk der ønsker at blive frivillige med at finde organisationer der søger, over hele landet<br>
+    Frivillig Job har 16 forskellige områder man kan finde frivillig job indenfor, samt massere af forskellige frivillige jobopslag inden for dem alle</p>
+    <h4>Bliv frivillig</h4>
+    <a href="https://frivilligjob.dk/jobs?key=madspil&sprog=&opgavetype%5B%5D=3&period-start=&period-end=" style="color: yellow">Frivillig jobs indenfor madspild</a>
+
+
+    <h2>Stop Madsp<span style="color: red">!</span>ld - Silkeborg </h2>
+    <p>Stop Madspild Silkeborg er en non-profit, humanitær forening, med det formål at indsamle overskudsfødevarer og fordele dem blandt mennesker der har brug for dem.
+        At være frivillig hos Stop Madspild Silkeborg betyder at man kan hjælpe så ofte eller sjælendt som det passer en, alt form for hjælp modtages med tanknemmelighed.
+    </p>
+    <h4>Bliv frivillig</h4>
+    <a href="http://www.stopmadspild-silkeborg.dk/frivillig/" style="color: yellow">Stop madspil Silkeborg - Bliv frivillig</a><br>
+    <a href="http://www.stopmadspild-silkeborg.dk/" style="color: yellow">Stop madspil Silkeborg forside</a><br>
+<br>
+<br>
+</div>
+
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>

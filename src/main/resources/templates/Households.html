@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>For households</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+
+        /*  HEADER NAVIGATION BAR */
+        .navbar a {
+            align-content: center;
+            float: left;
+            color: white;
+            font-family: "Noto Sans CJK KR";
+            background-color: green;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 26px;
+            lengt: 90%;
+        }
+
+        /* HEADER NAVIGATION BAR SETTINGS */
+        .navbar a:hover {
+            background-color: orangered;
+        }
+        .navbar a:active {
+            background-color: darkblue;
+        }
+        .active {
+            background-color: orangered;
+        }
+
+        /* drop down*/
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 25px;
+            border: none;
+            outline: none;
+            color: lightyellow;
+            padding: 26px;
+            background-color: green;
+            font-family: "Noto Sans CJK KR";
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            alignment: right;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: lightyellow;
+            padding: 16px 40px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: orangered;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+        /* BODY */
+        body{
+            background-image: url("nicefood.jpg");
+            background-size: cover;
+        }
+
+
+
+        a:hover {
+            background-color: green;
+        }
+
+
+
+
+
+        /* COLLAPSIBLE LIST FOR FAQ */
+        /*Structure*/
+
+
+        .collapsible {
+            margin-right: 30px;
+            margin-left: 30px;
+            font-family: "Noto Sans CJK KR";
+            background-color: rgba(0,128,0,0.5);
+            color: lightyellow;
+            border: solid orangered 2px;
+            cursor: pointer;
+            width: 40%;
+            text-align: center;
+            outline: rebeccapurple;
+            font-size: 30px;
+            place-content: flex-end;
+            padding: 18px;
+        }
+
+
+
+        /*Contect / scroll down / answers */
+
+
+
+        .content {
+            font-family: "Noto Sans CJK KR";
+            background-color: rgba(270,122,0,0.7);
+            color: lightyellow;
+            font-size: 20px;
+            alignment: right;
+            max-height: 0;
+            transition: max-height 0.2s ease-out;
+            overflow: hidden;
+            place-content: center;
+            padding: 0 18px;
+            width: 38%;
+            margin-right: 30px;
+            margin-left: 30px;
+
+        }
+
+
+        /*faq/collapsible hover */
+        .collapsible:hover {
+            background-color: green;
+        }
+        
+        
+
+        /* HEADER HEADER */
+        #firstHeader{
+            alignment: center;
+            text-align: center;
+            margin: 10px;
+            font-size: 30px;
+            font-family: "Noto Sans CJK KR";
+            color: orangered;
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+            alignment: center;
+        }
+        #description{
+            text-align: left;
+            font-family: "Noto Sans CJK KR";
+            color: lightyellow;
+            alignment: right;
+            font-weight: 900;
+            alignment: left;
+            border: 2px;
+
+
+        }
+        h1{
+            color: orangered;
+            text-shadow: 2px 2px black;
+
+
+        }
+        h2{
+            color: orangered;
+            alignment: center;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        h2{
+            font-size: 32px;
+        }
+
+        #wrapper{
+            margin-top: 1px;
+            padding-left: 10px;
+            padding-right: 10px;
+            float: right;
+            background-color: rgba(0,128,0,0.5);
+            text-align: left;
+            padding: 5px;
+            width: 50%;
+            margin-right: 40px;
+
+
+
+        }
+
+    </style>
+    <!-- HEADER MENU -->
+    <div class="navbar">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="waste.html" class="active"><i class="fa fa-fw fa-info-circle"></i>Food waste around the world</a>
+        <a href="involved.html" class="active"><i class="fa fa-fw fa-heart"></i>Get involved</a>
+
+        <a href="aboutus.html" class="active"><i class='fas fa-user-friends'>
+        </i>About us</a>
+        <a href="contact.html" class="active"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+        <div class="dropdown">
+            <button class="dropbtn"></i><i class="fa fa-fw fa-pen"></i>Guides to reduce food waste<i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="resturant.html"><i class='fas fa-concierge-bell'></i>Restaurants</a>
+
+                <a href="company.html"><i class='fas fa-briefcase'></i>Companies and Commercial Kitchens</a>
+
+                <a href="retail.html"><i class='fas fa-bread-slice'></i>Retail
+                </a>
+
+                <a href="Households.html"><i class='fas fa-laptop-house'></i>Private households</a>
+                </a>
+            </div>
+        </div></div>
+    <br> <br> <br> <br>
+</head>
+<!-- HEADER END -->
+
+
+<body>
+
+<div id="firstHeader"><h1>Guides to minimize waste in private households<i class="fa fa-fw fa-leaf" style="color: green" ></i></h1>
+</div>
+
+<div id="wrapper">
+    <div id="description">
+        <h2>Food waste in private households</h2>
+        <p style="font-size: 22px">In the Eu, we waste around 88 million tons of food with an associated cost estimated at 143 billion euros(FUSIONS, 2016).
+            While an estimated 20% of to total food produced is wasted pr lost,
+            33 million people cannot afford a quality meal every dag(Eurostat, 2018).
+            Globally,approximately a third of all food produced for human consumption is lost or wasted (FAO, 2011).
+            FAO’s Food Loss Index (FLI) estimates that globally, around 14 percent of all food produced is lost from the post-harvest
+            stage up to, but excluding, the retail stage (FAO, 2019S).
+            According to the UNEP Food Waste Index 2021 around 931 million tonnes of food waste were generated in 2019 – <span style="text-decoration: double underline orangered 2px"> 61% of which came from households</span>,
+            The EU, households generate more than half of the total food waste in the EU (47 million tonnes) with 70% of food waste arising at household, food service and retail (FUSIONS, 2016).
+            Wasting food is not only an ethical and economic issue but it also depletes the environment of limited natural resources. The EU is committed to meeting the Sustainable Development Goal Target 12.3 to halve per capita
+            food waste at the retail and consumer level by 2030,
+            and reduce food losses along the food production and supply chains. By reducing food losses and waste to help achieve Sustainable Development Goals, we can also:
+            <span style="text-decoration-style: double ">
+            support the fight against climate change (food waste alone generates 8-10% of global greenhouse gas emissions (UNEP Food Waste Index 2021))
+            save nutritious food for redistribution to those in need, helping to eradicate hunger and malnutrition
+            save money for farmers, companies and households
+                </span>
+
+        </p>
+        <br>
+    </div>
+    </di> </div></div>
+
+
+
+
+<button type="button" class="collapsible"><i class='fas fa-shopping-cart' style='font-size:36px'></i></div>
+    Shop smart&nbsp;&nbsp;</i></button>
+<div class="content">
+    <p>Most of us tend to buy more food than we actually need. Although buying in bulk
+        may be convenient. Research keeps showing that this method of shopping lead
+        to more food waste <br>
+        To avoid buying more food than nod need, make  frequent trips to the grocery store every few days rather
+        than doing a bulk shopping trip once a week.Make a point to use up all the food you purchased during the last trip
+        to the market before buying more groceries.
+    </p>
+</div>
+
+<button type="button" class="collapsible"><i class='fas fa-scroll' style='font-size:36px'></i>
+    &nbsp;&nbsp;&nbsp;Always make a shopping list</i></button>
+
+<div class="content">
+    <p>
+        Make a list of items that you need to buy, and stick to that list!
+        This will helt you reduce impulse buying and therefore reduce food waste as well
+        Buying foods that are already in the home can ultimately become another source of waste.
+        Taking an inventory of the food in the house and making a grocery list before going to the
+        store might help people avoid purchasing unnecessary foods and cut back on potential waste.
+    </p>
+</div>
+
+
+<button type="button" class="collapsible"><i class='fas fa-temperature-low' style='font-size:36px'></i>
+    &nbsp;&nbsp;Store food</i></button>
+<div class="content">
+    <p>
+        Improper storage leads to a massive amount of food waste. According to the Natural Resource Defense Council, about two-thirds of household waste in the
+        United Kingdom is due to food spoilage. Many people are unsure how to store fruits and vegetables, which can lead to premature ripening and, eventually, rotten produce.
+        For instance, potatoes, tomatoes, garlic, cucumbers and onions should never be refrigerated.
+        These items should be kept at room temperature. Separating foods that produce more ethylene gas from those that don’t is another great way to reduce food spoilage.Ethylene promotes ripening in foods and could lead to spoilage.
+        Foods that produce ethylene gas while ripening include: <br>
+        Avocados <br>
+        Bananas<br>
+        Cantaloupes <br>
+        Peaches<br>
+        Pears<br>
+    </p>
+</div>
+
+
+<button type="button" class="collapsible"><i class='fas fa-pepper-hot' style='font-size:36px'></i>
+    Learn how to preserve</button>
+<div class="content">
+    <p> Food preservation techniques fermenting and pickling have been used for thousands of years.
+        Pickling, a type of preservation method using brine or vinegar, may have been used as far
+        back as 2400 BC
+        Pickling, drying, canning, fermenting, freezing and curing are all methods you can use
+        to make food last longer, thus reducing waste.
+        Not only will these methods shrink your carbon footprint, they will save you money as well.
+        What’s more, most preservation techniques are simple and can be fun.
+        For example, canning an excess of ripe apples and turning them into applesauce,
+        or pickling fresh carrots from the market will provide you with a delicious and long-lasting
+        treat that even kids will enjoy.
+    </p>
+</div>
+
+
+<button type="button" class="collapsible"><i class='far fa-trash-alt' style='font-size:36px'></i>
+    <i class='fas fa-trash-alt' style='font-size:36px'></i>
+    <i class='fas fa-trash' style='font-size:36px'></i>
+    &nbsp;Participate in composting</button>
+<div class="content">
+    <p> Composting leftover food is a beneficial way to reuse food scraps, turning food waste into energy for plants.
+        While not everyone has room for an outdoor composting system, there’s a wide range of countertop composting systems
+        that make this practice easy and accessible for everyone, even those with limited space.
+        An outdoor composter may work well for someone with a large garden, while a countertop composter is best for city dwellers with houseplants or small herb gardens.
+    </p>
+</div>
+
+
+<button type="button" class="collapsible"><i class='far fa-lemon' style='font-size:36px'></i>
+    Keep a clutter-free fridge</button>
+<div class="content">
+    <p>
+        While having a well-stocked fridge can be a good thing, an overly filled fridge can be bad when it comes to food waste.
+        Help avoid food spoilage by keeping your fridge organized so you can clearly see foods and know when they were purchased.
+        A good way to stock your fridge is by using the FIFO method, which stands for “first in, first out.”
+        For example, when you buy a new carton of berries, place the newer package behind the old one. This helps ensure that older food gets used, not wasted.
+    </p>
+</div>
+
+
+<button type="button" class="collapsible"><i class='fas fa-pizza-slice' style='font-size:36px'></i>
+    Save leftovers</button>
+<div class="content">
+    <p>
+        Although many people save excess food from large meals, it is often forgotten in the fridge, then tossed when it goes bad.
+        Storing leftovers in a clear glass container, rather than in an opaque container, helps ensure you don’t forget the food.
+        If you happen to cook a lot and you regularly have leftovers, designate a day to use up any that have accumulated in the fridge. It’s a great way to avoid throwing away food.
+        What’s more, it saves you time and money.
+    </p>
+</div>
+
+
+<button type="button" class="collapsible"><i class='fas fa-edit' style='font-size:36px'></i>
+    </i>
+    Plan a weekly menu</button>
+<div class="content">
+    <p>
+        Making a meal menu for the week may help some people organize their food usage and cut back on waste.
+        Using online tools or cookbooks to help plan out meals for the week can a person to compile an accurate shopping list.
+        It may take a few weeks for each household to get the menu right, but having a set weekly menu might help some people reduce the guesswork around meals and avoid wasting food.
+    </p>
+</div>
+
+
+<button type="button" class="collapsible"><i class='fas fa-blender' style='font-size:36px'></i>
+    Use your blender</button>
+<div class="content">
+    <p>
+        Blending up a nutrient-packed smoothie can be a delicious way to reduce food waste.
+        While the stems, ends and peels of produce may not be appetizing in their whole form, adding them to a
+        smoothie is a way to reap their many benefits.
+        The stems of greens like kale and chard are packed with fiber and nutrients, making them a great addition to smoothies. The
+        tops of beets, strawberries and carrots also make great add-ins.
+        Other items that would otherwise be discarded can also be thrown into a nutritious blend, including fruit and vegetable peels, wilted herbs,
+        overripe bananas and chopped broccoli stalks.
+    </p>
+</div>
+
+
+<button type="button" class="collapsible"><i class="fa fa-shopping-bag" style="font-size:36px;"></i>
+    Pack your lunch</button>
+<div class="content">
+    <p>
+        One of the simplest ways to avoid food waste on the go is to bring food from home.
+        Investing in quality food containers that do not leak and are light and convenient
+        to carry can help. Making extra portions of evening meals to keep in the fridge as
+        ready-to-go packed lunches can eliminate the need to spend extra time making lunch
+        before work or school in the morning. This might also save a person money.
+    </p>
+</div>
+
+<button type="button" class="collapsible"><i class='fas fa-snowflake' style='font-size:36px'></i>
+    Use your freezer</button>
+<div class="content">
+    <p>
+        Freezing foods can help preserve them for later use and prevent them from spoiling.
+        Many fresh fruits and vegetables keep well when frozen, extending their shelf life and
+        reducing waste.
+        Other foods may preserve well in the freezer as well, such as bread, meats, and even some
+        prepared dishes.
+        Freezing foods that people use less often, such as herbs, is especially helpful. For those
+        looking to eat more sustainably, freezing extra fresh fruits and vegetables when they are in season
+        locally can reduce the need for buying them when they are out of season and come from far away.
+    </p>
+</div>
+
+
+<button type="button" class="collapsible"><i class="material-icons" style="font-size:36px">restaurant</i>
+    Keep ypur sizes in check</button>
+<div class="content">
+    <p>
+        Freezing food is one of the easiest ways to preserve it, and the types of food that take well to freezing are endless.
+        For example, greens that are a bit too soft to be used in your favorite salad can be put in freezer-safe bags or containers and used at a later date in smoothies and other recipes.
+        An excess of herbs can be combined with olive oil and chopped garlic, then frozen in ice cube trays for a handy and delicious addition to sautés and other dishes.
+        You can freeze leftovers from meals, excess produce from your favorite farm stand, and bulk meals like soups and chilis. It’s a great way to ensure you always have a healthy, home-cooked meal available.
+    </p>
+</div>
+
+<button type="button" class="collapsible"><i class='fas fa-calendar-alt' style='font-size:36px'></i>
+
+    Understand experetion dates</button>
+<div class="content">
+    <p>
+        “Sell by” and “expires on” are just two of the many confusing terms companies use on food labels to let
+        consumers know when a product will most likely go bad.
+        The problem is, the US government doesn’t regulate these terms
+        In fact, the task is often left to food producers to determine the date they think a product is most likely to spoil by. The truth is, most food that
+        has just passed its expiration date is still safe to eat.
+        “Sell by” is used to inform retailers when the product should be sold or removed from the shelves. “Best by” is a
+        suggested date that consumers should use their products by.
+        Neither of these terms means that the product is unsafe to eat after the given date.
+        While many of these labels are ambiguous, “use by” is the best one to follow.
+        This term means that the food may not be at its best quality past the listed date
+        A movement is now underway to make the food expiration labeling system more clear
+        for consumers. In the meantime, use your best judgment when deciding whether food that is slightly past its expiration date is safe to eat.
+    </p>
+</div>
+
+<button type="button" class="collapsible"><i class='fas fa-recycle' style='font-size:36px'></i>
+
+    Recycle your food waste</button>
+<div class="content">
+    <p>
+        Get a food caddy - a kitchen container you only use for food scraps and ingredients for compost,
+        and remember to use a  compostable bag for your food caddy
+    </p>
+</div>
+
+</div>
+
+<script>
+    var faq = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < faq.length; i++) {
+        faq[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+
+</script>
+</body>
+</html>

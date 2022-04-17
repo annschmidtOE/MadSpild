@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For larger companies and Commercial kitchens</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+
+        /*  HEADER NAVIGATION BAR */
+        .navbar a {
+            align-content: center;
+            float: left;
+            color: white;
+            font-family: "Noto Sans CJK KR";
+            background-color: green;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 26px;
+            lengt: 90%;
+        }
+
+        /* HEADER NAVIGATION BAR SETTINGS */
+        .navbar a:hover {
+            background-color: orangered;
+        }
+        .navbar a:active {
+            background-color: darkblue;
+        }
+        .active {
+            background-color: orangered;
+        }
+
+        /* drop down*/
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 25px;
+            border: none;
+            outline: none;
+            color: lightyellow;
+            padding: 26px;
+            background-color: green;
+            font-family: "Noto Sans CJK KR";
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            alignment: right;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: lightyellow;
+            padding: 16px 40px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: orangered;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+        /* BODY */
+        body{
+            background-image: url("comapny.jpg");
+            background-size: cover;
+        }
+        a:hover {
+            background-color: green;
+        }
+
+        body {
+            background-size: cover;
+
+        }
+
+        h1{
+            alignment: center;
+            text-align: center;
+            font-family: "Noto Sans CJK KR";
+            color: yellow;
+            size: 900px;
+            text-shadow: 2px 2px black;
+        }
+
+        #firstHeader{
+            alignment: center;
+            text-align: center;
+            margin: 10px;
+            font-size: 25px;
+            font-family: "Noto Sans CJK KR";
+            color: green;
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+            alignment: center;
+        }
+        #firstP{
+            alignment: left;
+            margin-right: 30px;
+            float: right;
+            padding-right: 40px;
+            width: 50%;
+            color: yellow;
+            text-shadow: 3px 3px black;
+            font-size: 30px;
+            font-family: "Noto Sans CJK KR";
+            font-weight: 600;
+        }
+
+        .collapsible {
+            margin-right: 30px;
+            margin-left: 30px;
+            font-family: "Noto Sans CJK KR";
+            background-color: rgba(255,255,51,0.5);
+            color: black;
+            border: solid green 2px;
+            cursor: pointer;
+            width: 40%;
+            text-align: center;
+            outline: rebeccapurple;
+            font-size: 30px;
+            place-content: flex-end;
+            padding: 18px;
+        }
+
+
+
+        /*Contect / scroll down / answers */
+
+
+
+        .content {
+            font-family: "Noto Sans CJK KR";
+            color: lightyellow;
+            font-size: 20px;
+            alignment: right;
+            max-height: 0;
+            transition: max-height 0.2s ease-out;
+            overflow: hidden;
+            place-content: center;
+            padding: 0 18px;
+            width: 38%;
+            margin-right: 30px;
+            margin-left: 30px;
+            background-color: rgba(0,128,0,0.5);
+
+
+        }
+
+
+        /*faq/collapsible hover */
+        .collapsible:hover {
+            background-color: green;
+        }
+
+
+
+    </style>
+    <!-- HEADER MENU -->
+    <div class="navbar">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="waste.html" class="active"><i class="fa fa-fw fa-info-circle"></i>Food waste around the world</a>
+        <a href="involved.html" class="active"><i class="fa fa-fw fa-heart"></i>Get involved</a>
+
+        <a href="aboutus.html" class="active"><i class='fas fa-user-friends'>
+        </i>About us</a>
+        <a href="contact.html" class="active"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+        <div class="dropdown">
+            <button class="dropbtn"></i><i class="fa fa-fw fa-pen"></i>Guides to reduce food waste<i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="resturant.html"><i class='fas fa-concierge-bell'></i>Restaurants</a>
+
+                <a href="company.html"><i class='fas fa-briefcase'></i>Companies and Commercial Kitchens</a>
+
+                <a href="retail.html"><i class='fas fa-bread-slice'></i>Retail
+                </a>
+
+                <a href="Households.html"><i class='fas fa-laptop-house'></i>Private households</a>
+                </a>
+            </div>
+        </div></div>
+    <br> <br> <br> <br>
+</head>
+
+<div id="firstHeader">
+<h1>Guides for companies and commercial kitchens<i class='fas fa-warehouse' style="color: green"></i>
+</h1>
+</div>
+
+
+<div id="firstP">
+<p>
+
+    While an estimated 20% of to total food produced is wasted pr lost,
+    33 million people cannot afford a quality meal every dag(Eurostat, 2018).
+    Globally,approximately a third of all food produced for human consumption is lost or wasted (FAO, 2011).
+    FAO’s Food Loss Index (FLI) estimates that globally, around 14 percent of all food produced is lost from the post-harvest
+    stage up to, but excluding, the retail stage (FAO, 2019S).
+
+
+</p></div>
+
+
+<button type="button" class="collapsible"><i class='far fa-chart-bar'></i></div>
+    The Food Waste Buisness Model</button>
+<div class="content">
+    <p>
+        Many companies are incorporating better waste management practices into their business models.
+        A food waste business model might include using existing waste to create something new, to solve a
+        secondary business problem, or to source specific food waste to improve an existing product.
+        Consider how your business model could be improved by using the waste that your employees
+        create every day. Ideas like this can help you branch out and be more eco-friendly.
+    </p>
+</div>
+
+
+<button type="button" class="collapsible"><i class='fas fa-chart-line'></i>
+    &nbsp;&nbsp;&nbsp;Turn food waste into profil</i></button>
+<div class="content">
+    <p>
+        Creating additional income with your organic waste is a great way to keep it out of the landfill. You can turn food waste into profit in a variety of ways, depending on your existing business.
+        Sweden uses food waste to create biogas – a kind of fuel that powers everything from their buses, to heating resident homes. Why not sell your food waste to a local biogas company for profit?
+    </p>
+</div>
+
+
+<button type="button" class="collapsible"><i class='fas fa-mortar-pestle' style='font-size:36px'></i>
+    &nbsp;&nbsp;Make products from Food Waste</i></button>
+<div class="content">
+    <p>
+        Products made from food waste are on the rise, with many companies jumping on this lucrative way to convert waste into profit. All you need is a little creative thinking on your side.
+        Consider the products that you have now and the organic waste they produce. One pickle company decided to upcycle the cucumber water used in their dill creation process, and now sells it as a mix for Bloody Mary drinks! What sort of product could you create?
+    </p>
+</div>
+
+<button type="button" class="collapsible"><i class='fas fa-recycle' style='font-size:36px'></i></i>
+    Create a Food Waste Recyciling Program</button>
+<div class="content">
+    <p>
+        Food waste recycling is a popular solution that helps your company
+        reduce discarded organic food. Create an internal program that collects organic
+        waste and converts it into compost for your garden.
+        Compost can also be sent home with your employees or sold to nearby farms for an a
+        dditional income stream. Any compostable foods from employees, canteens or kitchens can be used.
+    </p>
+</div>
+
+<button type="button" class="collapsible"><i class='fas fa-pepper-hot' style='font-size:36px'></i>
+    Support your local Food Waste startup</button>
+<div class="content">
+    <p>
+        There are bound to be some food waste startup companies in your area. These companies
+        are on the hunt for less expensive organic materials that they can use to create products
+        of their own.
+        With you as the source, you might be able to divert a huge amount of waste from your
+        company to another – where it will be used to make something of value. Plus, your business grows!
+    </p>
+</div>
+
+
+<button type="button" class="collapsible"><i class='fas fa-hands-helping'></i>
+    &nbsp;Donate Wasted Food to Local Shelters</button>
+<div class="content">
+    <p> With the right food waste management, you can make sure that your company’s waste or
+        excess kitchen foods are going somewhere valuable. Consider donating it to your local shelter.
+        In France, any excess food is collected and donated to food banks. Not only does this prevent 46,000 tons of food waste
+        from polluting landfills, it feeds a lot of people.
+    </p>
+</div>
+
+
+<button type="button" class="collapsible"><i class='fas fa-piggy-bank' ></i>
+    Buy food Conservatively and Consciously </button>
+<div class="content">
+    <p>
+        Ugly food doesn’t sell at stores, yet it has the same nutrient content as food that looks good. Consider buying from suppliers that focus on selling ugly food and rescue it from becoming waste.
+        Measure how your company manages its food waste and conduct an audit before and after instituting positive changes. Promote conscious buying, eating, and disposing of food waste at work.
+    </p>
+</div>
+
+
+<button type="button" class="collapsible"><i class='fas fa-mobile-alt'></i>
+    Explore app based solutions</button>
+<div class="content">
+    <p>
+        Office food waste aside, if you’re in the restaurant business or you sell produce every day from a store –
+        you should explore getting on a last-minute food rescue app.
+        Apps exist that will help you sell food items that are just about to expire, to their ever-hungry app users. If you want to move those last-day donuts, this is the best way to do it.
+    </p>
+</div>
+
+
+<button type="button" class="collapsible">
+    <i class='fas fa-seedling'></i>
+    Think before throwing food awasy</button>
+<div class="content">
+    <p>
+        Where is food waste happening in your business? Reduce how your employees dispose of organic waste by educating them about the issue of food waste and how you want to help.
+
+        Encourage employees to consider what they pack for lunch or buy on their lunch break. Incorporate less food waste into your company culture and stop the tide of food heading to the landfill.
+    </p>
+</div>
+
+</div>
+
+<script>
+    var faq = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < faq.length; i++) {
+        faq[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+
+</script>
+</body>
+
+</html>
+

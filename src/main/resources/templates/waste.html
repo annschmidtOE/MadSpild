@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Waste</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+
+        /*  HEADER NAVIGATION BAR */
+        .navbar a {
+            align-content: center;
+            float: left;
+            color: white;
+            font-family: "Noto Sans CJK KR";
+            background-color: green;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 26px;
+            lengt: 90%;
+        }
+
+        /* HEADER NAVIGATION BAR SETTINGS */
+        .navbar a:hover {
+            background-color: orangered;
+        }
+        .navbar a:active {
+            background-color: orangered;
+        }
+        .active {
+            background-color: orangered;
+        }
+
+
+        /* drop down*/
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 25px;
+            border: none;
+            outline: none;
+            color: lightyellow;
+            padding: 26px;
+            background-color: green;
+            font-family: "Noto Sans CJK KR";
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            alignment: right;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: lightyellow;
+            padding: 16px 40px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: orangered;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        body{
+            background-image: url("waste.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        textarea { /*skabt min egen <> */
+            width: 100%;
+            height: 200px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;
+        }
+
+
+        /* HEADER */
+
+        h1{
+            text-align: center;
+            alignment: center;
+            font-family: "Noto Sans CJK KR";
+            font-size: 40px;
+            color: orangered;
+            object-position: center left;
+            object-fit: none;
+            margin-bottom: 5px;
+            padding-bottom: 1px;
+            text-shadow: 2px 2px black;
+        }
+
+        .active:after {
+            content: inherit;
+            background-color: rgba(0, 137, 125,0.5);
+        }
+
+
+        img{
+            margin-top: 50px;
+            border-radius: 4px;
+            padding: 5px;
+            width: 630px;
+            alignment: right;
+            float: right;
+
+        }
+
+        p{
+            margin: 5px;
+            float: left;
+            font-weight: 600;
+            font-family: "Noto Sans CJK KR";
+            font-size: 20px;
+            color: lightyellow;
+            text-shadow: 3px 3px black;
+            width: 63%;
+        }
+
+        h2{
+            float: left;
+            text-align: left;
+            margin-right: 800px;
+            text-shadow: 2px 2px black;
+            color: orangered;
+            font-size: 30px;
+            font-family: "Noto Sans CJK KR";
+
+        }
+        html{
+            box-shadow:inset 0 0 0 2000px rgba(0,100,0,0.3);
+
+        }
+
+
+
+    </style>
+    <!-- HEADER MENU -->
+    <div class="navbar">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="waste.html" class="active"><i class="fa fa-fw fa-info-circle"></i>Food waste around the world</a>
+        <a href="involved.html" class="active"><i class="fa fa-fw fa-heart"></i>Get involved</a>
+
+        <a href="aboutus.html" class="active"><i class='fas fa-user-friends'>
+        </i>About us</a>
+        <a href="contact.html" class="active"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+        <div class="dropdown">
+            <button class="dropbtn"></i><i class="fa fa-fw fa-pen"></i>Guides to reduce food waste<i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="resturant.html"><i class='fas fa-concierge-bell'></i>Restaurants</a>
+
+                <a href="company.html"><i class='fas fa-briefcase'></i>Companies and Commercial Kitchens</a>
+
+                <a href="retail.html"><i class='fas fa-bread-slice'></i>Retail
+                </a>
+
+                <a href="Households.html"><i class='fas fa-laptop-house'></i>Private households</a>
+                </a>
+            </div>
+        </div></div>
+    <br> <br> <br> <br>
+</head>
+<body>
+<img src="ad.jpg">
+<h1>Food Waste Around the World</h1>
+<p>Nearly 1/2 of all fruit & vegetables produced globally are wasted each year – UN <br>
+    Worldwide, one in every seven people go to bed hungry and more than 20,000 people die of hunger every day.
+    According to the Natural Resources Defense Council, reducing food losses by just 15% would be enough food to feed more
+    than 25 million Americans at a time when one in six lacks a secure supply of food to their tables.
+    Further, to the extent that good produce is going to waste early in supply chains (on farms, distribution, and retail),
+    we need to be smarter about recovering that nutritious food and either sell it at a low cost or donate to underserved people.
+    Awareness about food waste also goes to the heart of being a more conscious consumer.
+    Let’s attempt to create a culture of sustainability.<br>
+    Unsustainable consumption depletes resources beyond regenerative capacity and subsequently causes other serious negative environmental impacts.<br>
+    The global food system has profound implications for the environment and producing more food than is consumed only exacerbates the pressures, some of which follow:<br><br>
+    More than 20 percent of all cultivated land, 30 percent of forests and 10 percent of grasslands are undergoing degradation<br>
+    Globally 9 percent of the freshwater resources are withdrawn, 70 percent of this by irrigated agriculture<br>
+    Agriculture and land-use changes like deforestation contribute to more than 30 percent of total global greenhouse gas emissions<br>
+    Globally, the agri-food system accounts for nearly 30 percent of end-user available energy and, <br>
+    Overfishing and poor management contribute to declining numbers of fish, some 30 percent of marine fish stocks are now considered overexploited.<br>
+</p>
+<br>
+<h1>Uncovering the global food waste scandal facts</h1>
+<p>
+    About one-third of all food produced for human consumption goes to waste.<br>
+    Consumers in rich countries waste almost as much food, 222 million tons, as the entire net food production of sub-Saharan Africa.<br>
+    Industrialized countries waste 670 million tonnes. Developing countries lose 630 million tonnes. Total lost or wasted globally: 2.3 billion tonnes.<br>
+    About 2/3 of household waste is due to food spoilage from not being used in time, whereas the other 1/3 is caused by people cooking or serving too much.<br>
+    Only about 3% of food scraps in the U.S. are composted.<br>
+    24 to 35% of school lunches end up in the bin.<br>
+    2.3 million tonnes of fish discarded in the North Atlantic and the North Sea each year; 40 to 60% of all fish caught in Europe are discarded – either because they are the wrong size, species, or because of the ill-governed European quota system.<br>
+    An estimated 20 to 40% of UK fruit and vegetables rejected even before they reach the shops – mostly because they do not match the supermarkets' excessively strict cosmetic standards.<br>
+</p>
+<img src="waste2.jpeg">
+
+<br>
+<h1 style="margin-right: 660px;">Uncovering facts about hunger</h1>
+<p>
+    A third of the world's entire food supply could be saved by reducing waste – or enough to feed 3 billion people; this would still leave enough surplus for countries to provide their populations with 130 per cent of their nutritional requirements.<br>
+    4600 kilocalories per day of food are harvested for every person on the planet; of these, only around 2000 on average are eaten – more than half of it is lost on the way.<br>
+    The bread and other cereal products that are thrown away in UK households alone would have been enough to lift 30 million of the world's hungry people out of malnourishment<br>
+    4 million people in the UK, 43 million in the EU, and around 35 million in the US suffer from food poverty.<br>
+    The UK, US, and Europe have nearly twice as much food as is required by the nutritional needs of their populations. Up to half the entire food supply is wasted between the farm and the fork. If crops wastefully fed to livestock are included, European countries have more than three times more food than they need, while the US has around four times more food than is needed, and up to three-quarters of the nutritional value is lost before it reaches people's mouths.<br>
+</p>
+<img src="waste3.jpeg">
+<br>
+<h1 style="margin-right: 660px;">Uncovering facts about the environmental impact the food waste causes</h1>
+<p>
+    Each time food is wasted all the resources that went into producing, processing, packaging, and transporting that food is wasted too. This means huge amounts of chemicals, energy, fertilizer, land, and 25% of all freshwater in the U.S. is used to produce food that is thrown away.<br>
+    14 per cent of greenhouse gases in the United States are associated with growing, manufacturing, transporting, and disposing of food.<br>
+    Getting food to our tables uses 10 per cent of the total U.S. energy budget, uses 50 per cent of U.S. land, and swallows 80 per cent of freshwater consumed in the United States.<br>
+    Additionally, most uneaten food rots in landfills where it accounts for almost 25% of U.S. methane emissions. Methane is a powerful greenhouse gas that is 21 times more harmful to the environment than CO2.<br>
+    It takes over 12,000 gallons of water to produce one pound of beef. Meanwhile, the largest percentage of food waste from the average American consists of meat products, and 33% ends up in a landfill.<br>
+    The production of one glass of orange juice requires 45 gallons of water. 15% of wasted food from the average American consists of fruit.<br>
+    8.3 million hectares of land required to produce just the meat and dairy products wasted in UK homes and in US homes, shops, and restaurants. That is 7 times the amount of Amazon rainforest destroyed in Brazil in one year, largely for cattle grazing and soy production to export for livestock feed.<br>
+    Between 2 and 500 times more carbon dioxide can be saved by feeding food waste to pigs rather than sending it for anaerobic digestion (the UK government's preferred option). But under European laws feeding food waste to pigs is banned. In Japan, South Korea, and Taiwan, by contrast, it is mandatory to feed some food waste to pigs.<br>
+</p>
+
+</body>
+</html>
+
+

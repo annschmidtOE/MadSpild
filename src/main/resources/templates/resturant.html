@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>For restaurants</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Gør den god på alle enheder -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+
+        /*  HEADER NAVIGATION BAR */
+        .navbar a {
+            float: left;
+            color: white;
+            font-family: "Noto Sans CJK KR";
+            background-color: green;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 26px;
+        }
+
+        /* HEADER NAVIGATION BAR SETTINGS */
+        .navbar a:hover {
+            background-color: orangered;
+        }
+        .navbar a:active {
+            background-color: darkblue;
+        }
+        .active {
+            background-color: orangered;
+        }
+
+        /* drop down*/
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 25px;
+            border: none;
+            outline: none;
+            color: lightyellow;
+            padding: 26px;
+            background-color: green;
+            font-family: "Noto Sans CJK KR";
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            alignment: right;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: lightyellow;
+            padding: 16px 40px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: orangered;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+        /* BODY */
+        body{
+            background-image: url("resturant.png");
+            background-size: cover;
+        }
+
+
+        /* COLLAPSIBLE LIST FOR FAQ */
+        /*Structure*/
+        .collapsible {
+            alignment: center;
+            font-family: "Noto Sans CJK KR";
+            background-color: rgba(0,128,0,0.5);
+            color: lightyellow;
+            margin-left: 15px;
+            border: solid #f0f30e 2px;
+            cursor: pointer;
+            width: 96%;
+            text-align: center;
+            outline: rebeccapurple;
+            font-size: 30px;
+            place-content: flex-end;
+        }
+
+
+        /*Contect / scroll down / answers */
+        .content {
+            alignment: center;
+            font-family: "Noto Sans CJK KR";
+            background-color: rgba(255,128,0,0.7);
+            color: lightyellow;
+            font-size: 20px;
+            width: 96%;
+            max-height: 0;
+            margin-left: 10px;
+            overflow: hidden;
+        }
+
+        /*faq/collapsible hover */
+        .collapsible:hover {
+            background-color: orangered;
+        }
+        /* HEADER HEADER */
+        #firstHeader{
+            alignment: right;
+            text-align: center;
+            font-size: 27px;
+            font-family: "Noto Sans CJK KR";
+            color: #f0f30e;
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+            text-shadow: 2px 2px black;
+
+        }
+        #description{
+            text-align: right;
+            font-family: "Noto Sans CJK KR";
+            color: lightyellow;
+            alignment: right;
+            font-weight: 900;
+            font-size: 25px;
+            align-content: revert;
+            alignment: right;
+        }
+     
+        #wrapper {
+            padding: 20px;;
+            text-underline-style: double;
+            text-underline-color: orangered;
+            alignment: right;
+            text-shadow: 2px 2px black;
+
+        }
+
+
+        .right{
+            alignment: right;
+            text-align: right;
+
+        }
+
+        .right{
+            margin-bottom: 1200px;
+            margin-right: 200px;
+        }
+
+
+    </style>
+    <!-- HEADER MENU -->
+    <!-- HEADER MENU -->
+    <div class="navbar">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="waste.html" class="active"><i class="fa fa-fw fa-info-circle"></i>Food waste around the world</a>
+        <a href="involved.html" class="active"><i class="fa fa-fw fa-heart"></i>Get involved</a>
+
+        <a href="aboutus.html" class="active"><i class='fas fa-user-friends'>
+        </i>About us</a>
+        <a href="contact.html" class="active"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+        <div class="dropdown">
+            <button class="dropbtn"></i><i class="fa fa-fw fa-pen"></i>Guides to reduce food waste<i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="resturant.html"><i class='fas fa-concierge-bell'></i>Restaurants</a>
+
+                <a href="company.html"><i class='fas fa-briefcase'></i>Companies and Commercial Kitchens</a>
+
+                <a href="retail.html"><i class='fas fa-bread-slice'></i>Retail
+                </a>
+
+                <a href="Households.html"><i class='fas fa-laptop-house'></i>Private households</a>
+                </a>
+            </div>
+        </div></div>
+    <br> <br> <br> <br>
+</head>
+<!-- HEADER END -->
+<body>
+
+
+</div>
+<div id="firstHeader"><h1>Guide to minimize waste for restaurants<i class="fa fa-fw fa-leaf" style="color: green" ></i></h1>
+</div>
+<!-- description -->
+<div id="wrapper">
+<div id="description">
+<p>
+    According to WRAP the (Waste and Resources Action Programme)
+    400,000 tons of food goes to waste from the food sector pr year
+    Furthermore, it’s believed that food waste
+    costs the restaurant sector a staggering  £682 million each year.<br>
+   <span style="text-decoration: underline";>
+   If your restaurant can learn to reduce food waste,
+        not only will you help the environment,
+    but you’ll also save your business money in the long run.</span>
+</p>
+    <br>
+</div>
+    </di></div>
+<!-- FAQ LEFT FOR RESTAURANTS  -->
+
+    <br>
+    <button type="button" class="collapsible">When ordering food<i class='fas fa-clipboard'></i></button>
+    <div class="content">
+        <p>As a commercial kitchen its important to pay attention to
+            the amount of food that is coming into the kitchen
+            While it may seem convenient to order a lot of food and stock it for later orders
+            This is not a great way to reduce waste
+            Food, especially produce and perishables,
+            does not last as long as other non-perishable items, like canned goods.
+            For example, buying a lot of apples may be cheaper, but in reality not all
+            the apples will be used which leads to food being wasted.
+            Instead, ask your vendor if you can receive the products in various stages og ripeness,
+            in that way you can still take advantage of the discount.
+            Additionally, inspect all orders as they arrive.
+            If the food looks like it is spoiled or is close to spoiling, don’t accept the order.
+        </p>
+    </div>
+    <button type="button" class="collapsible">When taking stock<i class='fas fa-edit'></i></button>
+    <div class="content">
+        <p>It is important to pay attention to how food should be stored to ensure the best quality and the longest freshness.
+            Food products should be stored in proper and well-labeled containers to reduce the chance of cross contamination
+            A very important step is using the FIFO system (first-in-first-in) for inventory, this will ensure
+            older products are being used first which will reduce waste.
+        </p>
+    </div>
+    <button type="button" class="collapsible">Recycle menu items<i class='fas fa-recycle'></i></button>
+    <div class="content">
+        <p>Most chefs and kitchen staff are creative and strongly dislike waste.
+            When planning your menu, plan ahead. Leftover chicken breast can be made into a fricassee or pie.
+            Apple garnishes into an apple sauce. Or, simply, create a temporary pricing special to move the menu item quickly and before it spoils.
+            Identify menu items with the most leftovers and remove them from your menu. Simply changing your menu may reduce food waste and lead to higher profits.
+        </p>
+    </div>
+    <button type="button" class="collapsible">Preparing food<i class='fas fa-concierge-bell'></i></button>
+    <div class="content">
+        <p>Proper portion control is one of the most important steps to minimizing food waste.
+            Commercial kitchens often have scales to measure out the correct portion amount before sending meals out of the kitchen,
+            or they use smaller plates. With proper serving portions, less food will be wasted.
+            Cross-contamination is one of the ways that food can become unusable during preparation.
+            If raw meat is stored near vegetables or cooked meat in the fridge, bacteria from raw meat can get on vegetables or other foods,
+            leading to unsafe consumption and food that must be thrown away.
+            Separating food storage areas and food preparation areas and using separate cutting boards and knives can help
+            to prevent cross-contamination from occurring and lead to less waste during preparation.
+            Investing in high-quality kitchen equipment can impact on kitchen waste reduction. Using specialized knives,
+            such as those for filleting fish, will result in less wasted product. These small differences can have a huge impact over time.
+            Ensure your food is stored at the proper temperatures. Frozen foods should be stored at 0 degrees Fahrenheit
+            and refrigerated foods at 41 degrees Fahrenheit. Allow prepared hot foods to cool before refrigeration to prevent spoilage.
+        </p>
+    </div>
+    <button type="button" class="collapsible">Participate in composting<i class='fas fa-apple-alt'></i>
+    </button>
+    <div class="content">
+        <p> Composting is a great method of reusing food.
+            Any part of raw vegetables can be composted, as well as stale bread, the skin of fruits, and egg shells.
+            With composting, any food scraps can be put off to the side and later into a compost bin that will break down the
+            scraps and turn it into a soil that can be used for gardening or taken to a compost plant where it will also be broken down and reused.
+        </p>
+    </div>
+    <button type="button" class="collapsible">Donate leftover food<i class='fas fa-hands-helping'></i>
+    </button>
+    <div class="content">
+        <p>Many restaurants donate leftover food to programs to help feed the hungry.
+            Soup kitchens and shelters can accept food that has not expired
+            to be redistributed to households that need it or used to make meals in various shelters and kitchens.
+            There are many organizations with missions to find and make connections between kitchens and shelters that can use leftover food
+        </p>
+    </div> </div>
+</div>
+
+
+
+<script>
+    var faq = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < faq.length; i++) {
+        faq[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+
+
+
+</script>
+</body>
+</html>

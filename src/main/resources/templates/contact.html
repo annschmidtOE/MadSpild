@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Get in contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Gør den god på alle enheder -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+
+        /*  HEADER NAVIGATION BAR */
+        .navbar a {
+            align-content: center;
+            float: left;
+            color: white;
+            font-family: "Noto Sans CJK KR";
+            background-color: green;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 26px;
+            lengt: 90%;
+        }
+
+        /* HEADER NAVIGATION BAR SETTINGS */
+        .navbar a:hover {
+            background-color: orangered;
+        }
+        .navbar a:active {
+            background-color: orangered;
+        }
+        .active {
+            background-color: orangered;
+        }
+
+
+        /* drop down*/
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 25px;
+            border: none;
+            outline: none;
+            color: lightyellow;
+            padding: 26px;
+            background-color: green;
+            font-family: "Noto Sans CJK KR";
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            alignment: right;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: lightyellow;
+            padding: 16px 40px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: orangered;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        body{
+            background-image: url("fruit.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+ /* WRITE US BOX*/
+        #flower{
+            width: 30%;
+            object-position: center top;
+            object-fit: none;
+            float: right;
+            padding-right: 37px;
+            border-right: 5px solid green;
+        }
+
+        textarea { /*skabt min egen <> */
+            width: 100%;
+            height: 200px;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;
+        }
+
+        #wrapper{
+            margin-top: 10px;
+            margin-right: 30px;
+            margin-bottom: 100px;
+            margin-left: 15px;
+            float: left;
+            background-color: rgb(0, 137, 125);
+            alignment: left;
+            text-align: left;
+            border: 5px solid green;
+            border-radius: 12px;
+            padding: 5px;
+        }
+
+
+
+        #textBox{
+            font-size: 18px;
+            font-family: "Noto Sans CJK KR";
+            color: lightyellow;
+            font-family: bold;
+            padding: 15px;
+
+        }
+
+        /* HEADER */
+
+        h1{
+            text-align: center;
+            alignment: center;
+            font-family: "Noto Sans CJK KR";
+            font-size: 40px;
+            color: orangered;
+            object-position: center top;
+            object-fit: none;
+            margin-top: -130px;
+            margin-bottom: 5px;
+            padding-bottom: 1px;
+            text-shadow: 3px 3px black;
+
+        }
+
+
+        /* FAQ COLLAPSIBLE */
+        .collapsible {
+            background-color: rgba(0, 137, 125,0.5);
+            font-family: "Noto Sans CJK KR";
+            color: lightyellow;
+            cursor: pointer;
+            padding: 18px;
+            font-size: 20px;
+            font-weight: 900;
+            width: 500px;
+            alignment: right;
+            text-align: left;
+            border: 2px solid rgba(225,56,0,0.5);;
+
+
+        }
+
+        .active, .collapsible:hover {
+            background-color: rgba(225,56,0,0.5);
+
+        }
+
+
+        .active:after {
+            content: inherit;
+            background-color: rgba(0, 137, 125,0.5);
+
+        }
+
+        .content {
+            background-color: rgba(0, 137, 125,0.5);
+            padding: 0 18px 0;
+            font-family: "Noto Sans CJK KR";
+            width: 462px;
+            max-height: 0;
+            font-size: 20px;
+            overflow: hidden;
+            color: lightyellow;
+            text-align: left;
+            transition: max-height 0.2s ease-out;
+            background-color: rgba(0, 180, 0, 0.8);
+        }
+
+        #faqBox{
+            float: right;
+            margin-right: 80px;
+
+        }
+
+
+        .center{
+            padding: 10px;
+            text-align: center;
+            alignment: center;
+            font-size: 25px;
+            font-family: "Noto Sans CJK KR";
+            font-weight: 600;
+            color: lightyellow;
+
+        }
+
+     #text{
+         color: yellow;
+         text-shadow: 3px 3px black;
+         size: 20px;
+         font-weight: 600;
+
+     }
+
+
+
+    </style>
+    <!-- HEADER MENU -->
+    <div class="navbar">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="waste.html" class="active"><i class="fa fa-fw fa-info-circle"></i>Food waste around the world</a>
+        <a href="involved.html" class="active"><i class="fa fa-fw fa-heart"></i>Get involved</a>
+
+        <a href="aboutus.html" class="active"><i class='fas fa-user-friends'>
+            </i>About us</a>
+        <a href="contact.html" class="active"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+        <div class="dropdown">
+            <button class="dropbtn"></i><i class="fa fa-fw fa-pen"></i>Guides to reduce food waste<i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="resturant.html"><i class='fas fa-concierge-bell'></i>Restaurants</a>
+
+                <a href="company.html"><i class='fas fa-briefcase'></i>Companies and Commercial Kitchens</a>
+
+                    <a href="retail.html"><i class='fas fa-bread-slice'></i>Retail
+                    </a>
+
+                    <a href="Households.html"><i class='fas fa-laptop-house'></i>Private households</a>
+                </a>
+            </div>
+        </div></div>
+    <br> <br> <br> <br>
+</head>
+
+<body>
+
+
+<!--SITE HEADER -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1><span style="font-size: 50px;">Get in contact! &nbsp;&nbsp;</span><i class='fas fa-envelope' style='font-size:50px'></i>
+</h1>
+<div class="center">
+
+    <div id="text">
+    <p>
+
+        We always love to hear from you!<br>
+        We always recommend you to read our faq on the right side, Besides that, we strongly recommend you to read our guides fitting to your needs.<br>
+        If you don't find what you're looking for you can always call us in our office hours, or you can fill out our contact form to the left and wee will take care of the rest
+        We appreciate every kind of help we can get!<br> And we are very much,<br>
+        looking forward to getting in contact with you!
+    </p>
+    </div>
+</div>
+
+
+<!-- CONTACT FORM -->
+<div id="wrapper">
+    <div id="textBox">
+        <h2>Fill out the form to get contacted</h2>
+        <div id="flower">  <img src="flower.jpg" alt="flower" width="200px" height="200px"></div>
+        <span style="font-family: 'Noto Sans CJK KR'">
+        <p>Contact type </p>
+        <input type="checkbox" name="contact1" value="private">Private<br>
+        <input type="checkbox" name="contact2" value="restaurant">Restaurant<br>
+        <input type="checkbox" name="contact3" value="company">Company<br>
+        <input type="checkbox" name="contact4" value="government">Government<br>
+            <input type="checkbox" name="contact5" value="anonymous">Anonymous<br>
+
+
+
+        <form action="/personData" method="post">
+            <p style="font-family: 'Noto Sans CJK KR'">Personal information</p><br>
+                    <input type="checkbox" name="contact4" value="government">I wish to stay anonymous<br>
+            <input type="text" name="firstName" placeholder="First name"> <br>
+            <input type="text" name="LastName" placeholder="Last Name"> <br>
+            <input type="text" name="phone" placeholder="Phone number"> <br>
+            <input type="text" name="email" placeholder="email"> <br> <br>
+        </form>
+
+        <form action="/companyData" method="post">
+            <p>Company / Restaurant information</p>
+            <input type="text" name="CVR-nummer" placeholder="CVR-number"> <br>
+            <input type="text" name="address" placeholder="Address"> <br>
+            <input type="text" name="cityzip" placeholder="City and zip"><br>
+            <input type="text" name="phone" placeholder="Phone number"> <br>
+            <input type="text" name="startdate" placeholder="Start-date"> <br>
+            <input type="text" name="status" placeholder="Status"> <br>
+        </form>
+
+        <form action="/govermentData" method="post">
+            <p>Government information</p>
+            <input type="text" name="afdeling" placeholder="department"> <br>
+            <input type="text" name="address" placeholder="Address"> <br>
+            <input type="text" name="cityzip" placeholder="City and zip"><br>
+            <input type="text" name="phone" placeholder="Phone number"> <br>
+            <input type="text" name="ean" placeholder="EAN-number"> <br>
+            <input type="text" name="cvr" placeholder="CVR-number"> <br>
+        </form>
+<br>
+    <input type="checkbox" name="contact1" value="ring">Contact me by call<br>
+    <input type="checkbox" name="contact2" value="mailMe">Contact me by mail<br> <br>
+        <input type="text" name="when" placeholder="Prefered time to get contacted"> <br> <br>
+        <form>
+            <textarea placeholder="Write your message here"></textarea>
+        </form>
+
+        <input type="submit" value="Send information" onclick="alert('Your information has been sent, and we will call/write with you as soon as possible! ' +
+         'We are looking forward to getting in contact with you! :)')"></span>
+
+
+    </div>  </div>
+</p>
+    </div>
+</div>
+
+<!-- FAQ FORM -->
+<div id="faqBox">
+    <button class="collapsible"><span style="font-weight: 800"><h2>Frequently Asked Questions</h2></span> </button>
+<br>
+    <button class="collapsible">When are your office hours?</button>
+    <div class="content">
+        <p>As this is an informational website driven by volunteers we don't have scheduled office hours,  however we check our mail daily and update the website weekley</p>
+    </div>
+<button class="collapsible">Is this an NGO</button>
+<div class="content">
+    <p>Yes this is a Non Government Organisation</p>
+</div>
+<button class="collapsible">How long is the response time on mail?</button>
+<div class="content">
+    <p>Normally one day, three at worst</p>
+</div>
+<button class="collapsible">When are customer-service hours?</button>
+<div class="content">
+<p>
+    We do not have a customer service you can call, you can fill out our contact form, and we will contact you within 3 business day
+</p>
+</div>
+<button class="collapsible">Is is possible to get in contact in weekends?</button>
+<div class="content">
+<p>Not often but sometimes we have staff calling back in the weekend</p>
+</div>
+<button class="collapsible">How do I volunteer?</button>
+<div class="content">
+<p>Fill out the contact form and we will contact you to discuss you options and see what would be the greatest fit for you. It is important to us you
+get the best volunteer experience possible</p>
+</div>
+    <button class="collapsible">What is the fastest way to get in contact?</button>
+    <div class="content">
+<p>The only way to get in contact with us is to fill out the contact form, weather you wish to be contacted by mail og phone does not matter when
+it comes to how fast we contact you</p>
+    </div>
+    <button class="collapsible">Can i apply for a job</button>
+    <div class="content">
+        <p>We do not have any paying jobs here, only volunteers helping us to answer your questions and keeping our site up to date</p>
+    </div>
+
+
+</div></div>
+
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+
+
+
+
+</body>
+</html>
+
+

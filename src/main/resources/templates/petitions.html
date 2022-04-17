@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Petitions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Gør den god på alle enheder -->
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        /*  HEADER NAVIGATION BAR */
+        .navbar a {
+
+            align-content: center;
+            float: left;
+            color: white;
+            font-family: "Noto Sans CJK KR";
+            background-color: rebeccapurple;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 26px;
+            lengt: 90%;
+        }
+
+        /* HEADER NAVIGATION BAR SETTINGS */
+        .navbar a:hover {
+            background-color: gold;
+        }
+        .navbar a:active {
+            background-color: gold;
+        }
+        .active {
+            background-color: hotpink;
+        }
+
+
+        /* drop down*/
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 25px;
+            border: none;
+            outline: none;
+            color: lightyellow;
+            padding: 26px;
+            background-color: rebeccapurple;
+            font-family: "Noto Sans CJK KR";
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: gold;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            alignment: right;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: lightyellow;
+            padding: 16px 40px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: gold;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+
+        #wrapper{
+            alignment: center;
+            text-align: center;
+            padding: 5px;
+        }
+
+
+        #textBox{
+            alignment: center;
+            align-content: flex-end;
+            font-size: 18px;
+            font-family: "Noto Sans CJK KR";
+            font-family: bold;
+            font-weight: 600;
+            color: lightyellow;
+            text-shadow: 2px 2px black;
+
+
+        }
+
+        /* HEADER */
+
+        h1{
+            text-align: center;
+            alignment: center;
+            font-family: "Noto Sans CJK KR";
+            font-size: 40px;
+            color: hotpink;
+            object-position: center top;
+            object-fit: none;
+            margin-bottom: 6px;
+            text-shadow: 2px 2px rebeccapurple;
+
+        }
+
+        .active:after {
+            content: inherit;
+            background-color: rgba(90,223,102,0.4);
+
+        }
+
+        html {
+            min-height:100%;
+            background:url("sad.jpg");
+            background-size:cover;
+            box-shadow:inset 0 0 0 2000px rgba(0,100,0,0.4);
+            font-family: "Noto Sans CJK KR";
+            font-size: 18px;
+        }
+
+
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 500px;
+            border: 1px solid #ddd;
+            color: black;
+            font-family: "Noto Sans CJK KR";
+
+
+        }
+
+        td, th {
+            border: 3px solid hotpink;
+            text-align: center;
+            background-color: rgba(90,223,102,0.4);
+            padding: 8px;
+            alignment: center;
+            font-weight: 800;
+            font-family: "Noto Sans CJK KR";
+            font-size: 18px;
+        }
+
+        tr:nth-child(even) {
+            color: black;
+            alignment: center;
+            font-family: "Noto Sans CJK KR";
+            font-size: 18px;
+
+        }
+
+
+
+    </style>
+
+    <div class="navbar">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+
+        <a href="workworld.html" class="active">  <i class='fas fa-hand-holding-heart'></i>Volunteer around the world</a>
+
+        <a href="petitions.html" class="active"><i class='fas fa-vote-yea'></i>Petitions to sign</a>
+
+        <a href="donate.html" class="active"><i class='fas fa-hand-holding-usd'></i>
+            </i>Donate</a>
+        <div class="dropdown">
+            <button class="dropbtn"></i><i class="fa fa-fw fa-pen"></i>Guides to reduce food waste<i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="resturant.html"><i class='fas fa-concierge-bell'></i>Restaurants</a>
+
+                <a href="company.html"><i class='fas fa-briefcase'></i>Companies and Commercial Kitchens</a>
+
+                <a href="retail.html"><i class='fas fa-bread-slice'></i>Retail
+                </a>
+
+                <a href="Households.html"><i class='fas fa-laptop-house'></i>Private households</a>
+                </a>
+            </div>
+        </div></div>
+</head>
+<body>
+
+</div>
+<br><br><br>
+<h1>Signing petitions is important and makes a difference!</h1>
+<div id="wrapper">
+<div id="textBox">
+<p>
+    Some may wonder how big a difference, signing a petition does.<br>
+    But signing a petition really does make a huge difference, for a number of reasons;<br>
+    To give a proposition legitimacy, it needs to use petitions to demonstrate the public support for the proposition.<br>
+    Partitions is a great way to gather a support base of people who care strongly about an issue, plus it may
+    show decision-makers which outcome people wish for an issue<br>
+    Petitions can also take a great roll in an information poll - it can show a business that customers
+    want them to take action or do something, or it can show politicians what order their voters wish them to go in<br>
+    Actually, partitions play a very important roll in democracy: <br>
+    When a petition is being handed to a representative it can go to a select committe for politicians to discuss it
+    ant potentially lead to a change in the law!<br>
+    We will keep this site updated with important food waste petitions to sign!<br>
+    If you should come across some petitions we haven't seen, you can always send them to us and we wil get them posten!
+</p>
+</div>
+</div>
+
+<table>
+
+
+    <tr>
+        <table style="width:100%">
+        <th style="width: 20%"><h2>Organisation & Petition</h2></th>
+        <th style="width: 60%"> <h2> Short description</h2></th>
+        <th style="width: 20%"> <h2> Sign petition </h2> </th>
+    </tr>
+    <tr>
+        <td>AVAAZ the world in action<br> Stop food waste, end hunger</td>
+        <td>"It’s a recipe to feed the world -- stop wasting a third of all the food we grow, and stop tens of millions of children going to bed hungry each night.
+             ... We already have a network of politicians ready to table legislation, we just need to build a huge push behind them. Let’s race to build a million-strong petition, submit to the EU consultation before it ends, then work with allies around the world till we win the laws we need."</td>
+        <td><a href="https://secure.avaaz.org/campaign/en/food_waste_loc/" style="color: yellow">Sign 'AVAAZ' petition</a></td>
+    </tr>
+    <tr>
+        <td>Petitions UK - Create a new tax for retailers that waste food</td>
+        <td>"We need retailers, and especially supermarkets, to stop wasting food every day
+            The Government should create a new tax, set based on the amount of food waste a retailer is responsible for, to incentivise retailers to tackle food waste, and punish those that fail to do so.
+            Each day tonnes of food is sent to land fill by supermarkets. This is just not right and has to change. "</td>
+        <td><a href="https://petition.parliament.uk/petitions/609306" style="color: yellow">Sign 'Petitions UK' Petition</a></td>
+    </tr>
+    <tr>
+        <td>No more food waste to landfill Thames Coromandel</td>
+        <td>"We are calling on the Thames Coromandel District Council to stop sending food waste to landfill and implement other measures that transform waste into a resource.
+
+            More specifically, we propose TCDC support home-scale food waste solutions, provide kerbside food waste collection and composting, support food businesses' waste minimisation, and deliver an ongoing education campaign."</td>
+        <td><a href="https://our.actionstation.org.nz/petitions/no-more-food-waste-to-landfill-thames-coromandel" style="color: yellow">Sign 'No more food waste to landfill Thames Coromandel' Petition</a></td>
+    </tr>
+    <tr>
+        <td>Change.ord - Stop rot! Call on supermarkets to tackle food waste in their supply chain</td>
+        <td>"UK supermarkets and businesses throw out over 7 million tonnes of food annually, before it gets to your shopping basket. That’s enough to lift all the hungry people in the UK out of food poverty.
+
+            Globally, if food waste was a country, it would be the third top carbon emitter after USA and China.
+
+            I've started this petition as part of Stop the Rot campaign because I want to see an end to this stark injustice.
+
+            Consumers are currently asked to do the lion's share of tackling food waste, but many businesses waste more in a day than a consumer does in a year."</td>
+        <td><a href="https://www.change.org/p/stop-the-rot-end-supply-chain-food-waste" style="color: yellow">Sign 'Change.org' Petition</a> </td>
+    </tr>
+    <tr>
+        <td>World food program USA - Take the pledge</td>
+        <td>"Global hunger isn’t about a lack of food. Right now, enough food is produced globally to feed the world’s entire population — but more than 800 million people still go to bed hungry each night. Along with conflict, gender inequality, climate change and COVID-19, food waste is a major cause of hunger worldwide.
+
+            Nearly one-third of all food produced each year is lost or wasted. That is $1 trillion dollars’ worth of wasted food every year that could be going towards feeding hungry people."</td>
+        <td><a href="https://secure.wfpusa.org/secure/stop-the-waste-petition-0" style="color: yellow">Sign 'World food program USA' Petition</a></td>
+    </tr>
+
+</table>
+
+
+</body>
+</html>
+
+

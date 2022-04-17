@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Retail</title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+
+        /*  HEADER NAVIGATION BAR */
+        .navbar a {
+            align-content: center;
+            float: left;
+            color: white;
+            font-family: "Noto Sans CJK KR";
+            background-color: green;
+            text-decoration: none;
+            font-size: 25px;
+            padding: 26px;
+            lengt: 90%;
+        }
+
+        /* HEADER NAVIGATION BAR SETTINGS */
+        .navbar a:hover {
+            background-color: orangered;
+        }
+        .navbar a:active {
+            background-color: yellow;
+        }
+        .active {
+            background-color: orangered;
+        }
+
+        /* drop down*/
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn {
+            font-size: 25px;
+            border: none;
+            outline: none;
+            color: lightyellow;
+            padding: 26px;
+            background-color: green;
+            font-family: "Noto Sans CJK KR";
+        }
+
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: orangered;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            alignment: right;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            float: none;
+            color: lightyellow;
+            padding: 16px 40px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover {
+            background-color: orangered;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+
+        /* BODY */
+        body{
+            background-image: url("fashion.jpeg");
+            background-size: cover;
+
+        }
+
+        a:hover {
+            background-color: green;
+        }
+        h1{
+            alignment: center;
+            text-align: center;
+            font-family: "Noto Sans CJK KR";
+            size: 900px;
+            text-shadow: 3px 3px black;
+        }
+
+        h1{
+            color: rgb(204,0,0);
+        }
+
+        #firstHeader{
+            alignment: center;
+            text-align: center;
+            margin: 10px;
+            font-size: 30px;
+            font-family: "Noto Sans CJK KR";
+            color: rgb(204,0,0);
+            text-decoration: underline;
+            text-decoration-thickness: 3px;
+            alignment: center;
+        }
+        #firstP{
+            alignment: center;
+            float: right;
+            width: 50%;
+            color: limegreen;
+            font-size: 30px;
+            font-family: "Noto Sans CJK KR";
+            font-weight: 800;
+        }
+
+        #firstP{
+            margin-right: 100px;
+            text-shadow: 3px 3px black;
+        }
+        .collapsible {
+            margin-right: 30px;
+            margin-left: 30px;
+            font-family: "Noto Sans CJK KR";
+            background-color: rgba(204,50,0,0.5);
+            color: black;
+            border: solid black 2px;
+            cursor: pointer;
+            width: 40%;
+            text-align: center;
+            outline: black;
+            font-size: 30px;
+            place-content: flex-end;
+            padding: 18px;
+        }
+
+
+
+        /*Contect / scroll down / answers */
+
+
+
+        .content {
+            font-family: "Noto Sans CJK KR";
+            color: lightyellow;
+            font-size: 20px;
+            alignment: right;
+            max-height: 0;
+            transition: max-height 0.2s ease-out;
+            overflow: hidden;
+            place-content: center;
+            padding: 0 18px;
+            width: 38%;
+            margin-right: 30px;
+            margin-left: 30px;
+
+        }
+
+        .content {
+            background-color: rgba(10,10,10,0.4);
+        }
+
+
+        /*faq/collapsible hover */
+        .collapsible:hover {
+            background-color: rgba(96,96,96,0.7);
+        }
+
+
+
+    </style>
+    <!-- HEADER MENU -->
+    <div class="navbar">
+        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="waste.html" class="active"><i class="fa fa-fw fa-info-circle"></i>Food waste around the world</a>
+        <a href="involved.html" class="active"><i class="fa fa-fw fa-heart"></i>Get involved</a>
+
+        <a href="#report" class="active"><i class='fas fa-user-friends'>
+        </i>About us</a>
+        <a href="contact.html" class="active"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+        <div class="dropdown">
+            <button class="dropbtn"></i><i class="fa fa-fw fa-pen"></i>Guides to reduce food waste<i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="resturant.html"><i class='fas fa-concierge-bell'></i>Restaurants</a>
+
+                <a href="company.html"><i class='fas fa-briefcase'></i>Companies and Commercial Kitchens</a>
+
+                <a href="retail.html"><i class='fas fa-bread-slice'></i>Retail
+                </a>
+
+                <a href="Households.html"><i class='fas fa-laptop-house'></i>Private households</a>
+                </a>
+            </div>
+        </div></div>
+    <br> <br> <br> <br>
+</head>
+<div id="firstHeader">
+<h1>Guides to reduce food waste in retail<i class='fas fa-shopping-basket'></i>
+</h1></div>
+<div id="firstP">
+    <p>
+
+        While an estimated 20% of to total food produced is wasted pr lost,
+        33 million people cannot afford a quality meal every dag(Eurostat, 2018).
+        Globally,approximately a third of all food produced for human consumption is lost or wasted (FAO, 2011).
+        FAO’s Food Loss Index (FLI) estimates that globally, around 14 percent of all food produced is lost from the post-harvest
+        stage up to, but excluding, the retail stage (FAO, 2019S).
+    </p>
+
+
+</div>
+
+<button type="button" class="collapsible"><i class='fas fa-database'></i>
+    Analyse data to identify the waste patterns&nbsp;</i></button>
+<div class="content">
+    <p> By analysing and identifying waste patters can supermarkets play a big role in understanding food waste.
+        Supermarkets capture information from numerous data points, from the eCommerce site, to vendor data, to loyalty programs,
+        to smart shelves. Despite technological advances, too many supermarkets still operate on paper printouts and spreadsheets.
+        But by using inefficient methods to capture, analyze, and communicate data , retailers risk missing out on insights that lead to growth and efficiency.
+        By using advanced data analytics and demand planning solutions, supermarkets can use both the data they collect and big data to predict demand, identify waste patterns and order exactly the right amount of food.
+    </p>
+</div>
+
+
+<button type="button" class="collapsible"><i class='fas fa-gift'></i>
+&nbsp;&nbsp;&nbsp;Donate surplus food</i></button>
+<div class="content">
+    <p>
+        Data shows that supermarkets can do more to ensure that surplus food
+        finds its way to those who need it. In the UK, the top 10 chains are
+        donating less than 9% of their surplus food for human consumption.
+        “We first published our food waste data in 2013 and believe that only
+        by understanding the hotspots can we reduce waste,” said a representative for
+        Tesco, the UK supermarket that gives away the highest percentage of its surplus food.
+        “Our priority is to reduce this surplus through optimizing our forecasting, ordering and
+        ‘reduce to clear’ processes. Our target is that no food safe for human consumption will be
+        wasted and [if you deduct 16,497 tons sent to animal feed and 9,661 tons given to colleagues]
+        we are now 77% of the way there.”
+        In the US, Kroger stores regularly set aside food to be donated to food banks and distributed
+        to communities through pantries. The company has publicly committed to donate three billion meals by 2025.
+        While retailers and food businesses have made efforts to increase food redistribution, charities urge they
+        should do more. The European Food Banks Federation is a network of over 300 food banks in 29 European countries
+        that works to prevent food waste and reduce food insecurity. Its ‘Food No Waste’ challenge encourages businesses
+        to share how they’re helping tackle the issue. Ideas included partnerships with local restaurants that turn unwanted
+        ingredients into meals for those who need it, no food waste cookbooks and apps that track surplus food and distribute it
+        to areas with high demand for donations.
+    </p>
+</div>
+
+
+<button type="button" class="collapsible"><i class='fas fa-sync'></i>
+    &nbsp;&nbsp;FIFO - first in first out</i></button>
+<div class="content">
+    <p>
+        FIFO is “first in first out” and simply means you need to label your food
+        with the dates you store them, and put the older foods in front or on top so that
+        you use them first. This system allows you to find your food quicker and use them more efficiently.
+    </p>
+</div>
+
+
+<button type="button" class="collapsible"> <i class='fas fa-chalkboard'></i>
+    Educate staff on food waste</button>
+<div class="content">
+    <p>
+        Damage to food and packaging is most likely to happen during transit and in storage.
+        The simple mistake of placing heavy items on top of food that can easily bruise or break,
+        such as fruits and eggs, can end up writing off entire boxes of fresh produce.
+        Breaking the cold chain can lead to even more severe and costly consequences.
+        The FAO estimates that as much as half of temperature-sensitive produce is lost post-harvest primarily because
+        of lack of or inadequate access to cold-chain logistics. A single break in the cold chain – whether it’s down to faulty equipment, a power outage, or the simple act of
+        failing to close a freezer door properly – can lead to unnecessary food waste.
+        Food retailers can help prevent these types of events from happening through the simple act
+        of training. By getting staff on board with tackling food waste and showing them how to mitigate
+        it, supermarkets can see meaningful changes. In Germany, Metro Cash and Carry staff are trained
+        in all aspects of hygiene and food safety during storage, transport, and processing.
+        The result is reduced food loss, a larger volume of marketable products, and greater
+        awareness on the sustainable handling of resources.
+    </p>
+</div>
+
+
+<button type="button" class="collapsible">
+    <i class='fas fa-carrot'></i>
+    &nbsp;Embrace imperfect produce</button>
+<div class="content">
+    <p>
+        As much as 15% of all food produced is lost before it leaves the farm,
+        according to WWF International data. That’s down to retailers putting pressure
+        on farmers to grow too much to guarantee agreed quantities, and rejecting goods
+        that don’t meet their aesthetic requirements.
+        Knobbly carrots, marked apples and wonky cucumbers – entire fields
+        of fresh food are disregarded by the supermarkets as they’re deemed too
+        ugly, too small, or too large to sell. The current food system prizes uniformity over
+        taste and the health of our planet.
+        One rising trend is the selling of wonky veg boxes – imperfect fruits and
+        vegetables at discounted rates. OddBox collects imperfect vegetables that
+        would otherwise be rejected by supermarkets. Consumers can buy a weekly veg box directly at 30% less than the regular price.
+        “By rescuing fruit and veg from farms, we find a home for the odd, wonky, and tasty produce that supermarkets won’t accept,
+        paying a fair price for all the farmers and growers we work with at home, and abroad,” writes the company. “Not just that,
+        but in doing so, we are able to save the tons and tons of greenhouse gases and water that were required to grow each pear or potato you see in your boxes each week.”
+    </p>
+</div>
+
+
+<button type="button" class="collapsible"><i class='fas fa-server'></i>
+    Use technology to manage expiry date </button>
+<div class="content">
+    <p>
+        One of the biggest culprits of food waste is expiry dates. Oded Omer, founder and CEO of AI-powered dynamic pricing company Wasteless,
+        estimates that as much as 87% of food waste from grocery stores is because of them having to dispose of food that goes past its expiration date.
+        First, supermarkets can play a role by educating their customers. Confusion about what the expiry dates mean for food safety causes a great deal
+        of edible food to be thrown away. Few consumers fully understand the difference between sell by, use by and best before dates. This is where supermarkets
+        can step in and help by standardizing this information, presenting it to their customers in clear, simple, and accurate formats.
+        Supermarkets are also turning to expiration date tracking technology to tackle the problem. Tools now exist that automatically check and flag products’
+        expiration dates, giving stores ample time to discount soon-to-expire products and sell stock before it perishes. They can even use dynamic pricing to encourage
+        customers to buy near-to-expired over fresher produce, changing the price of individual items throughout the day to capture the consumers’ attention and reduce potential waste.
+        The Too Good To Go app, launched in Denmark, takes a similar tactic. It alerts customers to excess food in supermarkets. Consumers can buy items through
+        the app at discounted prices and then pick up in store before food goes to waste.
+
+
+    </p>
+</div>
+
+
+<button type="button" class="collapsible"><i class='fas fa-tablet-alt'></i>
+    Switch to modern appliences</button>
+<div class="content">
+    <p>
+        According to the International Energy Agency (IEA), the grocery retail sector accounts for 2% of the electricity used globally – that’s
+        more than data centers consume! Implementing energy and asset-monitoring solutions across stores can make a significant positive difference
+        at scale and play a key role in developing solutions for a global food system that is currently under pressure.
+        The challenge is maintaining food quality and safety so products don’t unnecessarily go to waste, while using the least amount of energy possible.
+        Success begins with using modern refrigeration appliances that are efficient, reliable, and keep food at the correct temperatures,
+        even as customers help themselves to items. Internet of things (IoT) technologies can take this a step further by giving retailers actionable insights on
+        how to improve energy performance. Sensors monitor food temperature and equipment energy output, and can automatically alert maintenance teams if there are
+        equipment issues so they can be fixed early with minimal downtime.
+        The FAO claims that over the last five years alone, IoT solutions have saved US$37 million for food retailers by cutting food waste, while avoiding more than two million tons of carbon emissions.
+    </p>
+</div>
+
+</div>
+
+</div>
+
+<script>
+    var faq = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < faq.length; i++) {
+        faq[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+
+</script>
+</body>
+
+</html>
+
